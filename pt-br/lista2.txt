@@ -1,0 +1,36 @@
+1-) Crie um usuário chamado programador com senha: programador
+2-) Crie um usuário chamado aluno com senha: aluno
+3-) Crie um usuário chamado semterra com senha: semterra e senha vencida
+4-) Tente logar com o usuário semterra e escreva o que aconteceu.
+5-) Tente logar com o usuário aluno e escreva o que aconteceu.
+6-) Crie um usuário chamado semterra2 com senha: semterra2 conta desativada
+7-) Dê privilégios de conexão e aos recursos ao usuário aluno, semterra2 e ao usuário programador
+8-) Destrave a conta semterra2
+9-) Crie as tabelas abaixo com o usuário programador
+
+Alunos
+ra nome
+1 Pedro de Lara
+2 Vovo Mafalda
+3 Bozo
+4 Papai Papudo
+
+Notas
+codigo ra disciplina Media
+1 1 Matemática 5.4
+2 1 Português 7.4
+3 2 Matemática 6.9
+4 3 Matemática 3.9
+5 3 Português 9.4
+
+10-) Insira alguns dados nessas tabelas.
+11-) Dê os privilégios para o usuário aluno de fazer select, insert e update na tabela programador.alunos
+12-) Remova o privilégio de insert na tabela programador.alunos
+13-) Com o usuário programador crie uma visão chamada ver_notas, que junte o nome do aluno, disciplina e a sua média
+14-) Dê os privilégios para o usuário aluno de fazer select na visão programador.ver_notas
+15-) Com o usuário aluno, tente inserir um aluno na tabela programador.alunos, o que acontece?
+16-) Com o usuário aluno, Selecione todos os campos da tabela programador.alunos.
+17-) Com o usuário aluno, Selecione todos os campos da tabela programador.notas.
+18-) Com o usuário aluno, selecione todos os campos da visão ver_notas
+19-) Crie uma regra chamada regra1, que conceda os privilégios de select, insert e delete na tabela programador.notas
+20-) Aplique essa regra no usuário semterra2

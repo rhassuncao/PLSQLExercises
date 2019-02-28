@@ -1,0 +1,47 @@
+Utilizando as seguintes tabelas, faça
+Empregados
+
+Código Number(5)
+Nome Varchar(50)
+Sobrenome Varchar(50)
+Data_Admissao Date
+Data_Rescisao Date
+Salário Number(9,2)
+Profissao Varchar(40)
+Depto Number(3)
+
+Departamentos
+Código Number(3)
+Descrição Varchar(30)
+
+Crie funções ou procedimentos para cada caso abaixo, coloque também como posso testá-los:
+* Não esqueça de utilizar cursores
+1-) Crie uma função em que receba um valor e uma determinada porcentagem, e devolva essa porcentagem em valor.
+2-) Receba um número e diga se este número é par ou ímpar.
+3-) Insira alguns dados, para cada inserção, mostre “n. linhas inseridas”, onde n corresponde ao ROWCOUNT
+4-) Delete todos os empregados com código maior que 2008, e mostre quantas linhas foram afetadas.
+5-) Mostre todos os nomes de funcionários em letras maiúsculas, sobrenome em minúsculas e quantidade de caracteres que seu nome completo
+(nome+sobrenome) possui.
+6-) Verificar se existem aniversariantes no mês, se sim mostrar a quantidade, se não mostrar “nenhum aniversariante neste mês”.
+7-) Recebe um valor e traga nome,data_admissao,salario de todos os empregados que ganhem acima deste valor
+8-) idem a anterior, mas me traga também a descrição do departamento em que trabalha
+9-) Receba o código do departamento e traga a média de salário de cada departamento
+10-) Receba o departamento e mostre a descrição do depto. o nome do empregado e a quantos meses o empregado trabalha na empresa
+11-) Mostre todos os empregados demitidos, e quantos meses estes trabalharam na empresa
+12-) Receba uma porcentagem e recalcule o salário de todos os funcionários que estão empregados, mostrando na tela o seu nome, salário atual e
+salário projetado
+13-) De acordo com a nova tabela do IR:
+# Estão isentos os rendimentos líquidos mensais de até R$ 1.164,00;
+# De R$ 1.164,01 a R$ 2.326,00, a alíquota será de 15%;
+# Acima de R$ 2.326,00 incidirá a alíquota de 27,5%.
+Mostre na tela o nome do funcionário, seu salário e sua contribuição ao imposto de renda.
+IMPORTANTE: Você deverá utilizar a função criada no exercício 1
+14-) Receba o mês e mostre os nomes dos funcionários admitidos e demitidos neste mês
+15-) Mostrar todos os meses, e para cada um deles, o número de demitidos e contratados.
+16-) Crie um procedure que mostre o total de funcionários empregados, total bruto da folha de pagamento e total de descontos da folha de pagamento
+(descontos referentes a IR)
+17-) Crie uma função que receba o número do mês e retorne o nome deste.
+18-) Mostrar o nome dos funcionários e a data de admissão e demissão no seguinte formato 07 de novembro de 2006. (utilize a função criada
+anteriormente)
+19-) Um funcionário foi cadastrado desta forma: INSERT INTO empregados values(999,’Ze’,’Silva’,’01/01/06’,’’,’’,1)
+Qual instrução em PL/SQL eu poderia usar para tratar possíveis erros?

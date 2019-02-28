@@ -1,0 +1,17 @@
+CREATE OR REPLACE PROCEDURE TABUADA (
+    P_TABUADA NUMBER)
+IS
+
+BEGIN
+
+    FOR I IN 1..10 LOOP
+    
+        --DBMS_OUTPUT.PUTLINE(I || 'X' || P_TABUADA || '=' || I * P_TABUADA);
+        
+        DBMS_OUTPUT.PUTLINE('TESTS');
+    
+    END LOOP;
+
+END;
+
+CALL TABUADA(5);

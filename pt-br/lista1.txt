@@ -1,0 +1,53 @@
+Lista de Exercícios 01 – SQL – Seqüência, Visão e União
+
+1-) Crie uma seqüência chamada seq_cidade com valor inicial=1 e incremento de 1 em 1
+2-) Crie uma seqüência chamada seq_fabricantes com valor inicial=1 , incremento de 1 em 1, valor maximo 1000 não ciclico
+3-) Crie uma seqüência chamada seq_bebidas com valor inicial=10 e incremento de 5 em 5
+4-) Crie uma seqüência chamada seq_produtos com valor inicial=1 e incremento de 10 em 10
+5-) Crie as tabelas abaixo e insira os respectivos dados (OBRIGATORIO uso das seqüências criadas anteriormente)
+
+Cidades
+codigo nome
+1 Valinhos
+2 Indaiatuba
+3 Itupeva
+4 Salto
+
+Fabricantes
+codigo nome Codcidade
+1 ValBebidas 1
+2 Indaiá 3
+3 Indaiá 2
+4 Indaiá 4
+5 Chapadão Ltda 2
+
+bebida
+codigo descricao Codfabricante
+10 Cerveja 1
+15 Cerveja 5
+20 Água com gás 2
+25 Absinto 5
+30 Pinga com Mel 5
+35 HiFi 5
+
+Produtos
+codigo descricao Codfabricante
+1 Café 1
+11 Cerveja 2
+21 Amendoim 3
+31 Pizza 4
+41 Baguete 5
+51 Bolo de pinga 5
+
+6-) Mostre o nome dos fabricantes (sem repetição)
+7-) Mostre o nome do fabricante e o nome da cidade que ele tem a empresa
+8-) Mostre o nome do fabricante e a bebidas que ele vende
+9-) Mostre o nome do fabricante, a descrição da bebida e a descrição dos produtos que ele fabrica
+10-) Mostre o nome do fabricante, o nome da cidade e o nome da bebida que fabrica
+11-) Mostre o nome do fabricante e a quantidade de bebidas que ele fabrica
+12-) Mostre os nomes das bebidas e o nome dos produtos em uma única consulta (sem repetição)
+13-) Mostre os nomes das bebidas e o nome dos produtos em uma única consulta (mostrar todos)
+14) Mostre somente a descrição dos itens repetidos nas tabelas bebidas e produtos
+15-) Crie uma view para o exercício 8 chamada view_ex8
+16-) Crie uma view para o exercício 10 chamada view_ex10
+17-) Crie uma view para o exercício 12 chamada view_ex12

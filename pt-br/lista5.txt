@@ -1,0 +1,50 @@
+Utilizando as seguintes tabelas, faça
+
+Empregados
+Código Number(5)
+Nome Varchar(50)
+Sobrenome Varchar(50)
+Data_Admissao Date
+Data_Rescisao Date
+Salário Number(9,2)
+Cargo Varchar(40)
+Depto Number(3)
+
+Departamentos
+Código Number(3)
+Descrição Varchar(30)
+
+Auditoria
+Data date
+Descrição varchar(80)
+
+Há_vagas
+Código number(3)
+Data date
+Descrição varchar(90)
+Preenchida char(1)
+
+Vagas_preenchidas
+Código number(3)
+Data_Vaga date
+Descrição varchar(90)
+Preenchida_em date
+
+Sequencia seq_cod_ha_vagas: começando em 1, aumentando em 1 não cíclico e NOCACHE
+
+1-) Crie stored procedures que: sempre que uma ação de alteração,inclusão ou exclusão for executada na tabela departamentos, a tabela auditoria
+deverá ser atualizada.
+Por Exemplo: 07/11/2006 – Alteração na tabela departamentos
+11/11/2006 – exclusão na tabela departamento
+2-) Crie um stored procedure que assim que um empregado seja demitido, ou seja, preenchida sua data de rescisão, o sistema inclua automaticamente
+um registro na tabela há_vagas, com os dizeres precisa-se de <cargo> salário de <salário>.
+Importante, utilize a sequencia seq_cod_ha_vagas.
+3-) Crie um procedure chamado vagas_em_aberto que mostre a quantidade de vagas em aberto.
+4-) Faça um stored procedure que assim que uma vaga seja excluída, armazene na tabela de auditoria a data e a vaga excluída.
+5-) Um stored procedure que somente quando a vaga for preenchida, isto é, inserido um ‘S’, atualize a tabela vagas_preenchidas.
+6-) Crie um stored procedure antes que um departamento seja excluído, ele mostre na tela a quantidade e os nomes de todos os funcionários que
+ficarão sem departamento. Nestes funcionários, alterar o depto para 0 (zero)
+7-) Programe um stored procedure que assim que a tabela vagas_preenchidas sobra uma inclusão, grave na tabela de auditoria “vaga xxxx preenchida
+em xx/xx/xx”
+8-) Crie stored procedures que antes da exclusão em qualquer tabela de vagas, grave um registro na tabela de auditoria dizendo “tentativa de exclusão
+.......”

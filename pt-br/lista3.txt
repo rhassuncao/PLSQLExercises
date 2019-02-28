@@ -1,0 +1,94 @@
+1-) Crie um PL/SQL que escreva na tela o seu nome.
+2-) Crie um PL/SQL que declare uma variável nome e uma sobrenome, preencha-as e mostre na tela o nome concatenado (nome +
+sobrenome).
+3-) Escreva em PL/SQL o algoritmo abaixo e escreva a saída do mesmo.
+inteiro: a,b;
+real: d,c;
+a<-10;
+b<-25;
+c<-15;
+d<-5.5;
+a<-b*c;
+c<-d*b+c;
+b<-b*b+18000;
+a<-a-a;
+d<-52.55;
+escreva(”O valor de A=”,a);
+escreva(”O valor de B=”,d);
+4-) Crie um PL/SQl que imprima na tela o quadrado abaixo, formado por 8 * por 10 * utilizando for e while.
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+5-) Escreva um PL/SQL que crie uma variável do tipo date, atribua a data corrente e mostre na tela:
+A data atual e o último dia deste mês.
+6-) Faça um procedimento em PL/SQL que receba por parâmetro a tabuada, feito isso, imprima na tela a tabuada completa como no
+exemplo abaixo:
+Exemplo: parâmetro: 5 saída na tela: 1x5=5 2x5=10 3x5=15 . . . .
+7-) Reescreva os seguintes comandos IF, para não utilizar o IF. Qual a diferença entre eles
+IF total_sales <= 0
+THEN
+	no_revenue := TRUE;
+ELSE
+	no_revenue := FALSE;
+END IF;
+
+IF total_sales <= 0
+THEN
+	no_revenue := TRUE;
+ELSEIF total_sales > 0
+THEN
+	no_revenue := FALSE;
+END IF;
+8-) Reescreva as instruções abaixo removendo os IF desnecessários
+IF salary < 10000
+THEN
+	bonus := 2000;
+ELSE
+	IF salary < 20000
+	THEN
+		bonus := 1500;
+	ELSE
+		IF salary < 40000
+		THEN
+			bonus := 1000;
+		ELSE
+			bonus := 500;
+		END IF;
+	END IF;
+END IF;
+9-) Qual procedimento não será executado pelas instruções IF.
+IF (order_date > SYSDATE) AND order_total >= min_order_total
+THEN
+	fill_order (order_id, 'HIGH PRIORITY');
+ELSIF (order_date < SYSDATE) OR 
+	(order_date = SYSDATE)
+THEN
+	fill_order (order_id, 'LOW PRIORITY');
+ELSIF order_date <= SYSDATE AND order_total < min_order_total
+THEN
+	queue_order_for_addtl_parts (order_id);
+ELSIF order_total = 0
+THEN
+	disp_message (' No items have been placed in this order!');
+END IF;
+10-) Quantas vezes o LOOP a seguir será executado
+FOR year_index IN REVERSE 12 .. 1
+LOOP
+	calc_sales(year_index);
+END LOOP;
+11-) Escreva uma função em PL/SQL chamada TamanhoString, que receba um texto como parâmetro e retorne seu tamanho.
+12-) Escreva uma função em PL/SQL chamada ConverteParaMaiuscula, que receba um texto como parâmetro e retorne esse texto em
+maiúsculo.
+13-) Crie uma função em PL/SQL receba como parâmetro o dia, mês e ano e retorne a data por extenso.
+Exemplo: 12/03/2008 – 12 de março de 2008
+14-) Escreva uma função que receba como parâmetro a velocidade de uma rede (10, 100 ou 1000) e retorne o padrão desta rede. Se
+for informado um parâmetro incorreto, retornar “Padrão inexistente”
+Lembrando que:
+10mb/s – Ethernet ( 10 base T)
+100mb/s – Fast Ethernet (100 base T)
+1000mb/s – Giga Ethernet (1000 base T)
